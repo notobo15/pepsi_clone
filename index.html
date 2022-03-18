@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body">
+    <header>
+        <div class="header">
+            <a href="" class="header-logo">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <div class="header-nav">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">What's New</a>
+                <a href="">Newsletter</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="contain">
+            <div class="contant-text">
+                <h2>THAT'S WHAT<br><span>I LIKE</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <span>VIEW ALL PRODUCTS</span>    
+            </div>
+            <div class="contain-img">
+                <img src="./images/pepsi001.png" alt="" class="pepsi">
+            </div>
+            <div class="contain-social">
+                <a href="#">
+                    <img src="./images/facebook.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/twitter.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/instagram.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>  
+    <footer>
+        <div class="footer-thumb">
+            <a href="#">
+                <img src="./images/pepsi001.png" alt="" onclick="imgSlider('./images/pepsi001.png'); changeBGC('#0062be')">
+            </a>
+            <a href="#">
+                <img src="./images/pepsi002.png" alt="" onclick="imgSlider('./images/pepsi002.png'); changeBGC('#89898c')">
+            </a>
+            <a href="#">
+                <img src="./images/pepsi003.png" alt="" onclick="imgSlider('./images/pepsi003.png'); changeBGC('#1e1e1e')">
+            </a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;    
+        }
+
+        function changeBGC(color){
+            const  body  = document.querySelector('.body');
+            body.style.background = color;
+        }
+    </script>
+</body>
+</html>
